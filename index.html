@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bye Car</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="DNC-BYECAR-main/assets/dnc-logo.png" alt="dnc-logo" />
+        <h1>ByeCar</h1>
+
+    </header>
+
+    <main>
+        <section class="grid-container">
+            <div class="left-content">
+                <h2>Ter <span>uma moto</span> por assinatura nunca foi tão fácil!</h2>
+                <img src="DNC-BYECAR-main/assets/left-img.png" alt="girl in motocicle" />
+            </div>
+            <div class="right-content">
+                <h2>Conheça nossas <span>motos</span>!</h2>
+                <div class="carousel">
+                    <button class="carousel-button" onclick="slide(-1)">
+                        <img src="DNC-BYECAR-main/assets/left-arrow.png" alt="left arrow" />
+                    </button>
+                    <ul class="carousel-cards">
+                        <li id="card">
+
+                            <h2>Scooter Eletrica voltz EV1</h2>
+                            <img src="DNC-BYECAR-main/assets/img-card-1.png" alt="moto1" />
+                            <div class="price-container">
+                                <h1>Apartir de:</h1>
+                                <span>R$ 1.200,00</span>
+                                <h3>Plano de 30 meses</h3>
+                            </div>
+
+                        </li>
+                        <li>
+                            <h2>SHonda CB 500X</h2>
+                            <img src="DNC-BYECAR-main/assets/img-card-2.png" alt="moto1" />
+                            <div class="price-container">
+                                <h1>Apartir de:</h1>
+                                <span>R$ 1.200,00</span>
+                                <h3>Plano de 30 meses</h3>
+                            </div>
+
+                        </li>
+                    </ul>
+                    <button class="carousel-button" onclick="slide(1)">
+                        <img src="DNC-BYECAR-main/assets/right-arrow.png" alt="right arrow" />
+                    </button>
+                </div>
+                <button class="saiba-mais" onclick="openmodal()">Saiba Mais</button>
+            </div>
+
+        </section>
+
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-content-container">
+                    <img src="DNC-BYECAR-main/assets/img-card-1.png" alt="moto1" />
+                    <p>O câmbio de 6 marchas da CB 500X oferece maior confiança e performance na pilotagem, tornando as
+                        subidas de marcha mais leves e as reduções mais suaves!</p>
+                    <button class="close-modal" onclick="closemodal()">X</button>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    </main>
+
+
+
+</body>
+
+</html>
